@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.blogspot.darwinsapp.trollkoduvally">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:clearTaskOnLaunch="true"/>
+
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".TrollActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".PlaceActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".MultipActivity" />
+    </application>
+
+</manifest>

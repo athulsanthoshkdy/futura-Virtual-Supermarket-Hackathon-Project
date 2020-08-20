@@ -1,0 +1,13 @@
+package com.blogspot.darwinsapp.trollkoduvally;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MultipActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_multip);
+    }
+}
