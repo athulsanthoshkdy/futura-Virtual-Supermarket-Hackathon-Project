@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/cardview_light_background"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="വന്നോളീ "/>
+
+        <EditText
+
+            android:layout_margin="8dp"
+            android:id="@+id/usernameField"
+            android:padding="16dp"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/cardview_light_background"
+            android:hint="Username"
+            android:textColorHint="@color/nav_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+
+            android:layout_margin="8dp"
+            android:id="@+id/emailField"
+            android:padding="16dp"
+            android:textColorHint="@color/nav_icon"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:textColor="@color/cardview_light_background"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:id="@+id/passwordField"
+            android:textColor="@color/cardview_light_background"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:textColorHint="@color/nav_icon"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="SIGN UP"
+            android:fontFamily="serif"
+            android:textColor="#000"
+
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/loginTxtView"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already registered ? Login"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

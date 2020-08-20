@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textSize="17sp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:layout_weight=".1"
+            android:layout_margin="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:text="POST YOUR IMAGE"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/app_background"
+            android:id="@+id/imageBtn"
+            android:layout_margin="10dp"
+            android:src="@drawable/select_image"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="1dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_light_background"
+            android:hint="Write something...."
+            android:textColor="#000"
+            android:id="@+id/textDesc"
+            android:layout_below="@id/imageBtn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+
+        <Button
+            android:id="@+id/postBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:text="POST "
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/nav_text"
+            android:textStyle="bold"
+            />
+
+</LinearLayout>
+
+
+</ScrollView>
+
